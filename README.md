@@ -13,7 +13,7 @@ references mentioned in the paper. After obtaining the data, the file read_data.
 is used by smalltest.jl to produce the pictures in the paper. --->
 
 - Yelp: follow [LHQD/yelp](https://github.com/MengLiuPurdue/LHQD/tree/main/yelp_local_algorithms) to download the data, run `read_data.jl` and `yelp_restaurant_hypergraph.jl` to generate the hypergraph and store it at `yelp_restaurant_hypergraph.mat`, run `yelp_experiment.jl` to get log-PageRank embedding and `yelp_plot.jl` to plot the embedding.
-- Walmart: download data from [Walmart-Trips](https://www.cs.cornell.edu/~arb/data/walmart-trips/), run `read_data.jl` to preprocess the data and store it in `.mat` format, run `walmart_experiment.jl` to get log-PageRank embedding and `walmart_plot.jl` to plot the embedding.
+- Walmart: download data from [Walmart-Trips](https://www.cs.cornell.edu/~arb/data/walmart-trips/), run `read_data.jl` to preprocess the data and store it at `walmart.mat` format, run `walmart_experiment.jl` to get log-PageRank embedding and `walmart_plot.jl` to plot the embedding.
 
 
 
