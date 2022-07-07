@@ -53,7 +53,7 @@ xy, G = gnk(10000,6;dims=2)
 
 
 #topo-paper-logPR text
-#letter.smat can be geenrated using introduction.jl
+#letter.smat can be generated using introduction.jl
 G = MatrixNetworks.readSMAT("letter.smat")
 xy = readdlm("letter.xy")
 
