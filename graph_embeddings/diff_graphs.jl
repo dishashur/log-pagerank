@@ -1,4 +1,4 @@
-#code for generating the different graph used in the paper
+#code for generating the different graphs used in the paper
 include("diffusion-tools.jl")
 using SparseArrays
 using MatrixNetworks
