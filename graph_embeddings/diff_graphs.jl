@@ -1,4 +1,4 @@
-#code for generating the different graph used in the paper
+#code for generating the different graphs used in the paper
 include("diffusion-tools.jl")
 using SparseArrays
 using MatrixNetworks
@@ -53,7 +53,7 @@ xy, G = gnk(10000,6;dims=2)
 
 
 #topo-paper-logPR text
-#letter.smat can be geenrated using introduction.jl
+#letter.smat can be generated using introduction.jl
 G = MatrixNetworks.readSMAT("letter.smat")
 xy = readdlm("letter.xy")
 
