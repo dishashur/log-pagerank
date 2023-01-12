@@ -11,7 +11,7 @@ path_to_yelp = homedir()*"/log-pagerank/hypergraph_embeddings/data/yelp_dataset/
 
 function load_data_from_mat()
     # User metadata
-    Us = matread(path_to_yelp*"/yelp-user-metadata.mat")
+    Us = matread(path_to_yelp*"yelp-user-metadata.mat")
     user_avgstar = Us["user_avgstar"]
     user_elite = Us["user_elite"]
     user_int2id = Us["user_int2id"]
@@ -30,7 +30,7 @@ function load_data_from_mat()
     business_revcount = Bus["business_revcount"]
 
     # Review data
-    M = matread(path_to_yelp*"/yelp-review-data.mat")
+    M = matread(path_to_yelp*"yelp-review-data.mat")
     B = M["B"]
     U = M["U"]
     n = M["n"]
@@ -126,6 +126,6 @@ e_vegas[AllVegas] .= 1
 # Save hypergraph
 @show size(H)
 #
-matwrite(path_to_yelp*"/yelp_restaurant_hypergraph.mat", Dict("H"=>H, "locations"=>locations, "name"=>name,
+matwrite(path_to_yelp*"yelp_restaurant_hypergraph.mat", Dict("H"=>H, "locations"=>locations, "name"=>name,
 "city_int2name"=>city_int2name,"zipcode_int2name"=>zipcode_int2name,
 "state_int2name"=>state_int2name,"latlong"=>latlong, "e_vegas"=>e_vegas))
