@@ -4,8 +4,8 @@ include("../local-hyper.jl")
 using MAT
 using SparseArrays
 
-data_path = homedir()*"/log-pagerank/hypergraph_embeddings/data/yelp_dataset/"
-M = matread(data_path*"/yelp_restaurant_hypergraph.mat")
+data_path = homedir()*"/log-pagerank/data/yelp_dataset/"
+M = matread(data_path*"yelp_restaurant_hypergraph.mat")
 H = M["H"]
 Ht = sparse(H')
 order = round.(Int64,vec(sum(H,dims=2)))
@@ -59,4 +59,4 @@ end
 U, S, V = svd(Matrix(lP))
 
 #save results
-matwrite(data_path*"/yelp_restaurant_trial_$trials.mat", Dict("P"=>P, "U"=>U))
+matwrite(data_path*"yelp_restaurant_trial_$trials.mat", Dict("P"=>P, "U"=>U))

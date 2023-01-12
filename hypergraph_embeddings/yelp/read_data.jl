@@ -159,7 +159,7 @@ for j = 1:length(objects)-1
 end
 
 # Save user metadata, not really needed for our experiments
-matwrite(path_to_yelp*"/yelp-user-metadata.mat",Dict("user_avgstar"=>user_avgstar,
+matwrite(path_to_yelp*"yelp-user-metadata.mat",Dict("user_avgstar"=>user_avgstar,
  "user_elite"=>user_elite,"user_int2id"=>user_int2id,"user_revcount"=>user_revcount))
 
 # See review data (takes a minute to load)
@@ -193,4 +193,4 @@ for j = 1:length(objects)-1
     end
 end
 # Save to .mat if desired
-matwrite(path_to_yelp*"/yelp-review-data.mat",Dict("U"=>U, "B"=>B, "S"=>S, "Y"=>Y,"m"=>m, "n"=>n))
+matwrite(path_to_yelp*"yelp-review-data.mat",Dict("U"=>U, "B"=>B, "S"=>S, "Y"=>Y,"m"=>m, "n"=>n))
